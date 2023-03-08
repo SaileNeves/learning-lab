@@ -1,14 +1,19 @@
 h1 {
-    color: firebrick;
-  }
+  color: firebrick;
+}
 
-  ul.straw-hat {
-    list-style-type: none;
-  }
-  
-  ul.straw-hat li::before {
-    content: "👒"; 
-    font-size: 1.5em; 
-    margin-right: 0.5em;
-    display: inline-block;
-  }
+ul {
+  list-style-type: none;
+}
+
+.voice-actor-img {
+  float: left;
+  margin-right: 10px;
+  width: 42px;
+  height: 65.3333px;
+  border: 1px;
+}
+
+.border {
+  border: 1px solid black;
+}
