@@ -1,0 +1,14 @@
+h1 {
+    color: firebrick;
+  }
+
+  ul.straw-hat {
+    list-style-type: none;
+  }
+  
+  ul.straw-hat li::before {
+    content: "👒"; 
+    font-size: 1.5em; 
+    margin-right: 0.5em;
+    display: inline-block;
+  }
