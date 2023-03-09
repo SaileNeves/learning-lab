@@ -6,6 +6,10 @@ ul {
   list-style-type: none;
 }
 
+.bar-list {
+  padding-left: 0;
+}
+
 .voice-actor-img {
   box-sizing: border-box;
   width: 42px;
@@ -21,15 +25,37 @@ ul {
 
 .border {
   border: 1px solid black;
-
-  border-style: solid;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
   border-width: 0 0 1px;
   border-top-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 1px;
   border-left-width: 0px;
 }
+
+.bar {
+  display: flex; /* set container as flexbox */
+  flex-direction: row; /* set direction of flex items to horizontal */
+  justify-content: flex-start; /* set space between flex items */
+  align-items: center; /* center flex items vertically */
+  font-family: Verdana, Arial;
+  font-weight: bolder;
+  width: 1100px; /* set the width of the container to 100% of its parent element */
+  height: 34px; /* set the height of the container to 50 pixels */
+  gap: 10px;
+  background-color:#fc0505;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color:white;
+}
+  
+main {
+  width: 1060px; /* set the width of the element to 75% of the parent element */
+  border: 2px solid #ccc; /* set a 2-pixel solid border with a light gray color */
+  padding: 20px; /* add some padding to create space between the border and the content */
+  /* margin: 0 auto; /* center the element within the parent element */
+  }
