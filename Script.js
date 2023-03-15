@@ -1,22 +1,13 @@
-// add
-function addNumbers(num1,num2){
-    let result = num1 + num2
-    return result
-}
+// script.js
 
-// subtract
-function subtNumbers(num1,num2){
-    if (typeof num1 === "number" && typeof num2 === "number"){;
-    return num1 - num2;}
-    else {console.log('Error:Unexpected type provided')}
-}
+const newHeading = 'Hello, World!';
+const headingElement = document.querySelector('#main-heading');
+headingElement.textContent = newHeading;
 
-// division
-let divNumber = function(num1,num2){
-    return  num1 / num2
-}
-    
-// multiplication
-let multpNumber = function(num1,num2){
-    return num1 * num2
-}
+const NewTextColor = document.getElementById('Home');
+
+NewTextColor.style.color = 'blue';
+NewTextColor.style.backgroundColor = "green";
+
+const today = document.getElementById("date");
+today.textContent = new Date();
