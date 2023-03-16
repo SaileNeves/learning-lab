@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lavender;
+    font-family: "Noto Sans", sans-serif;
+    color: black;
+    padding: 0;
+}
+
+a {
+    color: mediumpurple;
+    font-weight: bold;
+}
+
+a:hover {
+    color: indigo;
+}
+
+a:active {
+    color: hsl(16, 100%, 81%);
+}
+
+#title {
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    text-align:center;
+}
+
+#title-text {
+    filter: drop-shadow(1px 1px 0.5px rgba(0, 0, 0, 0.5));
+    font-size: 45pt;
+    font-weight: bold;
+}
+
+#subtitle {
+    margin-top: -5px;
+    text-align: center;
+    color: darkslategray;
+    font-style: italic;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 85%;
+}
+
+.thumbnail, .thumbnail-pale {
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.thumbnail:hover {
+    filter: contrast(0.8) brightness(1.2);
+}
+
+.thumbnail-pale:hover {
+    filter: contrast(0.6) brightness(1.2);
+}
+
+.card {
+    flex: 1;
+    border-radius: 4px;
+    padding: 1em;
+    margin: 1.5em;
+    min-width: 300px;
+}
+
+.card1 {
+    background-color: mediumpurple;
+}
+
+.card2 {
+    background-color: hsl(130, 66%, 85%);
+}
+
+.card3 {
+    background-color: hsl(80, 66%, 85%);
+}
+
+.card4 {
+    background-color: hsl(30, 66%, 85%);
+}
+
+button {
+    background-color: indigo;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 32px;
+    color: azure;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    font-size: 16px;
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(105, 105, 105);
+}
+
+button:active {
+    background-color: gray;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

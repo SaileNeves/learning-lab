@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <Title>Gallery</Title>
 </head>
 
 <body>
     <header>
-        <h1> Project Gallery</h1>
+        <h1 id="title"> Project Gallery</h1>
+        <p id="subtitle">A gallery to display my projects</p>
         <nav>
             <ul>
-                <li><a href=".Index.html"> Home</a></li>
-                
+                <li><a href="index.html"> Home</a></li>
+
             </ul>
+            <link rel="stylesheet" href="style.css">
         </nav>
     </header>
 
     <main>
-<div class = "container">
-    <div class = "card card1" ></div> 
-    <!-- Remind to add the link here -->
-    <a href="" target="blank">  
-        <!-- put the link of the thumbnail img on the source -->
-        <img class="thumbnail" src="" alt="Hobby Page Thumbnail Image" width="100%">
-    </a>
-    <h2>Hobby Site</h2>
-    <!-- style="display: none;" -->
-    <p id="card1-text" class="card-text" style=>
-        A Hobby page talking about red hair shanks
-    </p>
-    <div class="center" >
-        <button id="card1-button" onclick="showHideDescription('#card1-text', '#card1-button')">Show more</button>
-        <!-- Stopped here, need to make a script to make the button work -->
-    </div>
+        <div class="container">
+            <div class="card card1">
+                <!-- Remind to add the link here -->
+                <a href="Link Here" target="blank">
+                    <!-- put the link of the thumbnail img on the source -->
+                    <img class="thumbnail" src="ShanksPageSS.png" alt="Hobby Page Thumbnail Image" width="100%">
+                </a>
+                <h2>Shank's page</h2>
+                <!-- style="display: none;" -->
+                <p id="card1-text" class="card-text" style="display: none;">
+                    A Hobby page talking about red hair shanks</p>
+                <div class="center">
+                    <button id="card1-button" onclick="showHideDescription('#card1-text', '#card1-button')">Show
+                        more</button>
+                    <!-- Stopped here, need to make a script to make the button work -->
+                </div>
+            </div>
 
-</div>
+            <div class="card card2">
+                <!-- Remind to add the link here -->
+                <a href="ShanksPage.html" target="blank">
+                    <!-- put the link of the thumbnail img on the source -->
+                    <img class="thumbnail" src="ShanksPage.png" alt="Hobby Page Thumbnail Image" width="100%">
+                </a>
+                <h2>Hobby Site</h2>
+                <!-- style="display: none;" -->
+                <p id="card1-text" class="card-text" style="display: none;">
+                    A Hobby page talking about red hair shanks</p>
+                <div class="center">
+                    <button id="card1-button" onclick="showHideDescription('#card1-text', '#card1-button')">Show
+                        more</button>
+                    <!-- Stopped here, need to make a script to make the button work -->
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer></footer>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
