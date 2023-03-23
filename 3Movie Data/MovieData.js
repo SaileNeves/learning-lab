@@ -34,40 +34,35 @@ let movieData = {
     },
 };
 
-//Turn Objects Into array
-const movieDataArray = Object.values(movieData);
-const movieTitles = Object.entries(movieData);
+    const movieTitles = Object.keys(movieData);
+    const movieObjs = Object.values(movieData);
+    
+    for(let i = 0; i < 4; i++) {
+        // Create title
+        const movieTitle = movieTitles[i]; 
+        const newCard = document.createElement('div');
+        newCard.classList.add('movie-card');
+    
+        const NewTitle = document.createElement('h2')
+        NewTitle.textContent = `Movie: ${movieTitle}`;
+        newCard.appendChild(NewTitle);
+      
+        // Movie object
+        const MovieInfo = movieObjs[i];
+  
+        // Create elements for properties
+        for(let property in MovieInfo) {
+            createParagraph(property, newCard, MovieInfo);
+        }
 
-// Get a reference to the card container element
-const cardContainer = document.getElementById('card-container')
+        // Append new card to parent
+        const parentElement = document.querySelector('.content');
+        parentElement.appendChild(newCard);
+    }
 
-//Loop trough the array and get the object properties
-for (let i = 0; i < movieDataArray.length; i++){
-    const title = movieTitles[0];
-    const movie = movieDataArray[i];
-
-    // Create the card element
-    const card = document.createElement("div")
-    card.classList.add('card');
-
-    // Create a list to hold the movie's properties
-    const propertyList = document.createElement('ul');
-
-    // Loop through the movies's properties and create a list item for each one
-  for (const property in movie) {
-    const listItem = document.createElement('li');
-    listItem.innerHTML = `<strong>${property}:</strong> ${movie[property]}`;
-    propertyList.appendChild(listItem);
-
-     //Add Title
-     const movieTitle = document.createElement("h2");
-     movieTitle.textContent = title;
-     card.appendChild(movieTitle);
-  }
-
+    
+function createParagraph(propertyName, newCard, filmeInfo){
+    const newP = document.createElement('p');
+    newP.textContent = `${propertyName}: ${filmeInfo[propertyName]}`;
+    newCard.appendChild(newP);
 }
-// Add the property list to the card
-card.appendChild(propertyList);
-
-// Add the card to the container
-cardContainer.appendChild(card);
