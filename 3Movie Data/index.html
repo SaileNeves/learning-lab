@@ -3,7 +3,7 @@
 
 <head>
     <title>Movie Guide App</title>
-    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body class="body">
@@ -24,6 +24,32 @@
         <h1>A Movie Database</h1>
         <section class="content">
             <div id="card-container"></div>
+
+            <button onclick="toggleForm()">Edit</button>
+
+            <form id ="movie-form" action="" method="post" onsubmit="createCard(event);">
+
+                <label for="Title">Title</label>
+                <input type="text" id="title-value" name="title">
+
+                <label for="Year">Year</label>
+                <input type="text" id="year-value" name="year">
+
+                <label for="Plot">Plot</label>
+                <input type="text" id="plot-value" name="plot">
+
+                <label for="Cast">Cast</label>
+                <input type="text" id="cast-value" name="cast">
+
+                <label for="Runtime">Runtime</label>
+                <input type="text" id="runtime-value" name="runtime">
+
+                <label for="Rating">Rating</label>
+                <input type="text" id="rating-value" name="rating">
+
+                <input type="submit" value="Finish">
+                
+            </form>
 
         </section>
 
