@@ -40,6 +40,7 @@ let movieData = {
     for(let i = 0; i < 4; i++) {
         // Create title
         const movieTitle = movieTitles[i]; 
+        //Create storage location
         const newCard = document.createElement('div');
         newCard.classList.add('movie-card');
     
@@ -66,3 +67,36 @@ function createParagraph(propertyName, newCard, filmeInfo){
     newP.textContent = `${propertyName}: ${filmeInfo[propertyName]}`;
     newCard.appendChild(newP);
 }
+
+//Show/hide Form button
+function toggleForm() {
+    let form = document.getElementById("movie-form");
+    if (form.style.display === "none") {
+      form.style.display = "block";
+    } else {
+      form.style.display = "none";
+    }
+  }
+
+  function createMovieElement() {
+    const newCard = document.createElement("div");
+
+    let Title = document.getElementById("title-value").value;
+    let Rating = document.getElementById("rating-value").value;
+    console.log(Title)
+  }
+
+
+  //Submit button
+  function createCard(event) {
+    event.preventDefault();
+
+    const newCard = document.createElement("div");
+    createMovieElement('title', 'h2', newCard);
+    createMovieElement('rating', 'p', newCard);
+    clearForm()
+  }
+
+  function clearForm() {
+    document.getElementById("movie-form").reset();
+  }
