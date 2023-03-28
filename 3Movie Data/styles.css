@@ -6,6 +6,6 @@
     width: 200px;
   }
    
-.movie-card p {
+.movie-card p, .movie-card h2 {
   text-transform: capitalize;
 }

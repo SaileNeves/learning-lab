@@ -33,7 +33,6 @@ let movieData = {
     cast: ["Ralph Fiennes", "F. Murray Abraham", "Mathieu Amalric"],
   },
 };
-
 const movieTitles = Object.keys(movieData);
 const movieObjs = Object.values(movieData);
 
@@ -98,6 +97,7 @@ function createCard() {
   createMovieElement('p', 'rating', newCard);
   const parentElement = document.querySelector('.content');
   parentElement.appendChild(newCard);
+  
 }
 
 //Submit button
@@ -112,10 +112,33 @@ function clearForm() {
   document.getElementById("movie-form").reset();
 }
 
-const cards = document.querySelectorAll('.movie-card');
-const yearElements = [];
-cards.forEach(card => {
-  const yearElement = card.querySelector('.year');
-  yearElements.push(yearElement);
-});
+//Button sort by year
+const sortButton = document.querySelector("#sort-by-year");
+sortButton.addEventListener("click", sortMoviesByYear);//
 
+//
+
+function sortMoviesByYear() {
+  // Retrieve all movie cards from the page
+  const movieCards = document.querySelectorAll(".movie-card");
+
+    // Convert NodeList to Array and extract year properties
+    const movies = Array.from(movieCards).map(card => {
+      return {
+        card: card,
+        year: parseInt(card.querySelector("p").textContent.slice(-4))
+      };
+    });
+
+  // Sort movies by year in ascending order
+  const Order = movies.sort((a, b) => a.year - b.year);
+
+   // Remove movie cards from the page
+   movieCards.forEach(card => card.remove());
+
+   // Reinsert movie cards into the page in the correct order
+   movies.forEach(movie => {
+     const container = document.querySelector(".content");
+     container.appendChild(movie.card);
+   });
+ }

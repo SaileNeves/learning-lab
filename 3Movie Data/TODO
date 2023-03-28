@@ -1,8 +1,16 @@
-//Criar Função
-  //Criar novo div para armazenar a carta
-  //Pegar informações do formulario
-  
-  //Adicionar Informações à carta
+//Criar novo div para armazenar a carta
+  //Listar campos de informação na carta
+    //Pegar informações do formulario
+      //adicionar aos campos de informação
+//Adicionar carta ao codigo html
 
 
-  //
+//Loop the objects
+//take the info
+//create elements with the info
+//create card with the elements
+//add card to the page
+
+//take the cards
+//look for added date 
+//

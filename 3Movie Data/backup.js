@@ -8,10 +8,11 @@
    /* EX
    let Title = document.getElementById("title-value").value;
    let Year = document.getElementById("year-value").value;  */
-   let runtime =
-
+   
     let cardHeader = document.createElement("h2");
     cardHeader.textContent = "Movie:" + Title;
+    let cardElm = document.createElement("p")
+    cardElm.textContent= "Prefix" + X
 
     //Define Card content
     const elmName = 
@@ -23,8 +24,6 @@
     /* EX:
     let createYear = document.createElement("p");
     createYear.textContent = "Year:" + Year;  */
-
-    
 
     //Add content to HTML card div
     newCard.append(cardHeader,createYear,createPlot,createCast,createRuntime,createRating)
