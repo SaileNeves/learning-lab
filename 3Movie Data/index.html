@@ -24,35 +24,38 @@
         <h1>A Movie Database</h1>
         <section class="content">
 
-            <button onclick="toggleForm()">Edit</button>
-
-            <form id ="movie-form" action="" method="post" onsubmit="submitCard(event);">
-
-                <label for="Title">Title</label>
-                <input type="text" id="title-value" name="title">
-
-                <label for="Year">Year</label>
-                <input type="text" id="year-value" class="year-input" name="year">
-
-                <label for="Plot">Plot</label>
-                <input type="text" id="plot-value" name="plot">
-
-                <label for="Cast">Cast</label>
-                <input type="text" id="cast-value" name="cast">
-
-                <label for="Runtime">Runtime</label>
-                <input type="text" id="runtime-value" name="runtime">
-
-                <label for="Rating">Rating</label>
-                <input type="text" id="rating-value" name="rating">
-
-                <input type="submit" value="Finish">
-                
-            </form>
-
             <button id="sort-by-year">Sort by Year</button>
 
         </section>
+
+        <button id = "form-button" onclick="toggleForm()">Edit</button>
+
+        <form id ="movie-form" action="" method="post" onsubmit="submitCard(event);">
+
+            <label for="Title">Title</label>
+            <input type="text" id="title-value" name="title">
+
+            <label for="Image">AddImg</label>
+            <input type="image" id="image-value" name="Image">
+
+            <label for="Year">Year</label>
+            <input type="text" id="year-value" class="year-input" name="year">
+
+            <label for="Plot">Plot</label>
+            <input type="text" id="plot-value" name="plot">
+
+            <label for="Cast">Cast</label>
+            <input type="text" id="cast-value" name="cast">
+
+            <label for="Runtime">Runtime</label>
+            <input type="text" id="runtime-value" name="runtime">
+
+            <label for="Rating">Rating</label>
+            <input type="text" id="rating-value" name="rating">
+
+            <input id= "finish-button" type="submit" value="Finish">
+            
+        </form>
 
     </main>
 

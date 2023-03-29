@@ -43,18 +43,18 @@ for (let i = 0; i < 4; i++) {
   const newCard = document.createElement('div');
   newCard.classList.add('movie-card');
 
-  const NewTitle = document.createElement('h2')
+  const NewTitle = document.createElement('h2');
   NewTitle.textContent = `Movie: ${movieTitle}`;
   newCard.appendChild(NewTitle);
 
   // Movie object
   const MovieInfo = movieObjs[i];
 
+  createParagraph('rating', newCard, MovieInfo)
   createParagraph('year', newCard, MovieInfo)
+  createParagraph('runtime', newCard, MovieInfo)
   createParagraph('plot', newCard, MovieInfo)
   createParagraph('cast', newCard, MovieInfo)
-  createParagraph('runtime', newCard, MovieInfo)
-  createParagraph('rating', newCard, MovieInfo)
   
   // Append new card to parent
   const parentElement = document.querySelector('.content');
@@ -89,12 +89,26 @@ function createMovieElement(elementType, propertyName, newCardArg) {
 function createCard() {
   const newCard = document.createElement("div");
   newCard.classList.add('movie-card');
-  createMovieElement('h2', 'title', newCard);
-  createMovieElement('p', 'year', newCard);
-  createMovieElement('p', 'plot', newCard);
-  createMovieElement('p', 'cast', newCard);
-  createMovieElement('p', 'runtime', newCard);
-  createMovieElement('p', 'rating', newCard);
+  const metaData = document.createElement("div");
+  metaData.classList.add("meta-data");
+  const cardContent = document.createElement("div");
+  cardContent.classList.add('card-content');
+  newCard.append(metaData,cardContent);
+  const movieImg= document.createElement('a');
+  movieImg.classList.add("movie-img");
+
+  
+  const Movie = createMovieElement('h2', 'title', newCard);
+  const Rating = createMovieElement('p', 'rating', newCard);
+  const Year = createMovieElement('p', 'year', newCard);
+  const Runtime = createMovieElement('p', 'runtime', newCard);
+  const Plot = createMovieElement('p', 'plot', newCard);
+  const Cast = createMovieElement('p', 'cast', newCard);
+  const Image = createMovieElement('img', 'Image', newCard);
+
+  newCard.appendChild(Movie,Image);
+  metaData.append(Rating,Year,Runtime);
+  cardContent.append(Plot,Cast);
   const parentElement = document.querySelector('.content');
   parentElement.appendChild(newCard);
   

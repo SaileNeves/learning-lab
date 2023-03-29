@@ -1,0 +1,80 @@
+1. Identify the problem:
+- Context
+    - Describe the issue
+        - Why do we need it ?
+            2. Research and refine[look up for solutions and break down the issue even further]
+- Focus on logic, not code.
+3. Write fake code[pseudocode].
+    - Once again, logic, not syntax
+4. Test it! Console.log, console.dir
+    - Test line by line.Don't move on until you have made this line work.
+
+
+
+1.Need to make a personal website, it should have:
+- A personal introduction
+    - My motives to become a dev
+        - A way to showcase what i learned
+
+2.Plan the site
+    - Homepage
+    - it should have a brief introduction and a navigation bar to go to other pages in the website
+        - About
+        - A page with my personal info and my motives to become a dev
+            - Gallery
+            - A page with a portfolio of my projects
+
+3.Build the code workings of the pages
+
+A.Homepage
+    --Head:/* it should countain the page title, metadata, link to StyleSheet, links to custom favIcon */
+
+    --Body: /* where the main content will be, divided into subsections */
+        -Header:/* it should contain navigation elements */
+             -Navigation bar
+             -Home, about, gallery buttons
+    
+        -Main:
+             -Title of the page
+             -Introduction Text
+             -
+    
+        -Footer:
+             -Sitemap
+             -Social Media Icons
+    
+
+
+B.About
+    --Head:
+
+    --Body: 
+        -Header:
+             -Navigation bar
+             -Home, about, gallery buttons
+    
+        -Main:
+             -Title of the page
+             -Text element with info about me and my motives
+             -
+    
+        -Footer:
+             -Sitemap
+             -Social Media Icons
+    
+C.Gallery
+    --Head:
+    
+    --Body: 
+        -Header:
+             -Navigation bar
+             -Home, about, gallery buttons
+    
+             -Main:
+             -Title of the page
+             -cards With img,link and descriptions of my projects
+             -
+        -Footer:
+             -Sitemap
+             -Social Media Icons
+    
