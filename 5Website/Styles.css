@@ -1,0 +1,127 @@
+#menu-button {
+   position: fixed;
+   top: 10px;
+   left: 10px;
+   background-color: transparent;
+   border: none;
+   font-size: 1.5rem;
+   cursor: pointer;
+ }
+ 
+ #menu-list {
+   position: fixed;
+   top: 0;
+   right: -100%;
+   height: 100%;
+   width: 70%;
+   background-color: #fff;
+   z-index: 9999;
+   transition: right 0.5s ease-in-out;
+ }
+ 
+ #close-button {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   background-color: transparent;
+   border: none;
+   font-size: 1.5rem;
+   cursor: pointer;
+  
+ }
+ 
+ #menu-list ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ #menu-list li {
+   padding: 10px;
+   border-bottom: 1px solid #ccc;
+ }
+ 
+ #menu-list li:last-child {
+   border-bottom: none;
+ }
+
+/*  MENU END */
+
+nav ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    justify-content: flex-end
+}
+
+nav li {
+    margin-right: 30px;
+  }
+ 
+  nav li:last-child {
+    margin-right: 0; /* Remove the margin on the last list item */
+} 
+
+nav a {
+    display: block; /* Make the link fill the entire list item */
+    padding: 10px; /* Add some padding to the link to make it more clickable */
+    text-decoration: none; /* Remove underline from the link */
+    color: hsl(236, 13%, 42%)
+ }
+
+ #navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ 
+
+ /* #page-positioning{
+  display:flex;
+    
+ } */
+
+ body{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding:10px
+    
+}
+
+#intro{
+    border: 1px ;
+    padding: 1px;
+    /* max-width: 600px; */
+    min-height: 300px;
+ }
+
+ #banner{
+  max-width: 100%;
+  display: block;
+ }
+
+ #sample{
+    display: grid;
+    border: 1px;
+    padding: 10px;
+    background-color: hsl(240, 100%, 5%);
+    color:hsl(35, 77%, 62%);
+    min-height: 400px;
+
+ }
+
+ #about-button{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+ }
+
+ #about-button:hover{
+    background-color: hsl(5, 85%, 63%)
+
+ }
