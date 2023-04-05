@@ -1,12 +1,48 @@
-1.Define the game mechanics
--Controls for moving
--How it grows by eating
--Game over conditions
--
+    Define the game mechanics:
 
-2-Tasks
--Create The game board
--Add Snake
--Add Movement Controls
--Add Food
--Add Score Marker
+    The game will be played on a 2D grid.
+    The player controls a snake that moves around the grid.
+    The snake grows in length each time it eats food.
+    The game ends if the snake hits the wall or its own body.
+
+    Create a wireframe:
+
+    The game board will be a square grid.
+    The snake will be a series of connected squares.
+    Food will appear randomly on the board.
+    The score will be displayed at the top of the screen.
+
+    Break it down into smaller tasks:
+
+    (x)Create the game board using HTML and CSS.
+    Create a snake object with initial position and direction.
+    Add controls to move the snake in the chosen direction.
+    Add logic to make the snake grow when it eats food.
+    Add logic to end the game if the snake hits the wall or its own body.
+    Add food to the board at random intervals.
+    Display the score at the top of the screen.
+
+    Define the data structures:
+
+    Use a 2D array to represent the game board.
+    Use an array to represent the snake's body, with each element representing a segment of the snake.
+    Use an object to represent the position of the food.
+    Use a variable to keep track of the current score.
+
+    Write the code:
+
+    Create the HTML and CSS for the game board.
+    Write the code to create the snake object and move it.
+    Write the code to make the snake grow and end the game if it hits the wall or its own body.
+    Write the code to add food to the board at random intervals.
+    Write the code to display the score at the top of the screen.
+
+    Test and debug:
+
+    Test the game thoroughly to make sure it works as intended.
+    Debug any issues you encounter, and make any necessary adjustments to improve the game.
+
+    Add finishing touches:
+
+    Add sound effects or animations to make the game more engaging.
+    Add a high score board to track the player's progress over time.

@@ -1,61 +1,50 @@
-#menu-list {
+/*  MENU */
+#menu-list{
   position: fixed;
   top: 0;
-  right: -100%; /* Slide the menu off-screen to the right */
-  width: 100%;
+  right: -70%;
+  width: 70%;
   height: 100%;
   background-color: #fff;
+  transition: right 0.4s ease-in-out;
+}
+
+#menu-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex start; /* adjust list position here */
+}
+
+#menu-list li {
   padding: 20px;
-  box-sizing: border-box;
-  transition: right 0.3s ease-in-out;
 }
 
-/*  MENU END */
-@media(min-width:768px){
-  .mobile-nav{
-    display:none
-  }
-  .navbar-toggler{
-    display: none;
-  }
- }
-
-/* nav ul {
-    list-style: none;
-    margin: 0; 
-    padding: 0;
-    display: flex;
-    justify-content: flex-end
+#menu-list.open {
+  right: 0;
 }
 
-nav li {
-    margin-right: 30px;
-  }
- 
-  nav li:last-child {
-    margin-right: 0; 
-  }
+#close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 
-
-nav a {
-    display: block; /* Make the link fill the entire list item */
-    padding: 10px; /* Add some padding to the link to make it more clickable */
-    text-decoration: none; /* Remove underline from the link */
-    color: hsl(236, 13%, 42%)
- } */
-
+/* Intro*/
+header{
+  width:100%
+}
  #navbar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
  }
-  */
 
- /* #page-positioning{
-  display:flex;
-    
- } */
+ h1{
+  margin: 0;
+ }
 
  body{
     display:flex;
@@ -65,28 +54,56 @@ nav a {
     
 }
 
+#banner{
+  max-width: 100%;
+  display: block;
+ }
+
 #intro{
     border: 1px ;
     padding: 1px;
     /* max-width: 600px; */
     min-height: 300px;
  }
+ #intro p{
+  color: hsl(236, 13%, 42%) ;
+}
 
- #banner{
-  max-width: 100%;
-  display: block;
- }
-
+/*MIDDLE PANNEL*/
  #sample{
     display: grid;
     border: 1px;
     padding: 10px;
     background-color: hsl(240, 100%, 5%);
-    color:hsl(35, 77%, 62%);
+    color:hsl(236, 13%, 42%);
     min-height: 400px;
 
  }
 
+ .sample-list{
+  list-style-type: none;
+  padding-left: 5px;
+ }
+
+.items{
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.items:last-child {
+  border-bottom: none;
+}
+
+ #sample h2{
+  color:hsl(35, 77%, 62%);
+  margin-bottom: 0;
+  height: ;
+}
+
+#sample h3{
+  color:hsl(36, 100%, 99%);
+}
+
+/*BUTTON*/
  #about-button{
     background-color: hsl(240, 100%, 5%);
     color: hsl(36, 100%, 99%);
@@ -99,3 +116,55 @@ nav a {
     background-color: hsl(5, 85%, 63%)
 
  }
+
+ /* BOTTOM LIST*/
+ ol {
+  list-style-type: none;
+  counter-reset: item;
+  padding: 0;
+}
+
+li {
+  counter-increment: item;
+  margin-bottom: 20px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 20%;
+  height: 20%;
+  margin-right: 20px;
+}
+
+.list-item-number {
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 10px;
+  color:hsl(233, 8%, 79%)
+}
+
+.list-item-content {
+  flex: 1;
+}
+
+.list-item-content h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  color: hsl(240, 100%, 5%);
+}
+
+.list-item-content p {
+  margin-bottom: 0;
+  margin-top: 3px;
+  font-size: 15px;
+  color:hsl(236, 13%, 42%)
+}
+
+@media(min-width:768px){
+ 
+}
