@@ -1,80 +1,23 @@
-1. Identify the problem:
-- Context
-    - Describe the issue
-        - Why do we need it ?
-            2. Research and refine[look up for solutions and break down the issue even further]
-- Focus on logic, not code.
-3. Write fake code[pseudocode].
-    - Once again, logic, not syntax
-4. Test it! Console.log, console.dir
-    - Test line by line.Don't move on until you have made this line work.
+1.(x)Reposition the Title at the same line as the navigation bar
+2.(x)resize the border and position it at the center
+3.(x)Align the title and bar with the main content border
+4.( )correctly position the containers inside the border
+5.( )make the items inside the containers  position correctly and not overflow
+
+Mobile
+1.( )Make the nav bar into a button wich displays the options when clicked
+2.( )Position the content vertically in sequence
 
 
+NavMenu
 
-1.Need to make a personal website, it should have:
-- A personal introduction
-    - My motives to become a dev
-        - A way to showcase what i learned
-
-2.Plan the site
-    - Homepage
-    - it should have a brief introduction and a navigation bar to go to other pages in the website
-        - About
-        - A page with my personal info and my motives to become a dev
-            - Gallery
-            - A page with a portfolio of my projects
-
-3.Build the code workings of the pages
-
-A.Homepage
-    --Head:/* it should countain the page title, metadata, link to StyleSheet, links to custom favIcon */
-
-    --Body: /* where the main content will be, divided into subsections */
-        -Header:/* it should contain navigation elements */
-             -Navigation bar
-             -Home, about, gallery buttons
-    
-        -Main:
-             -Title of the page
-             -Introduction Text
-             -
-    
-        -Footer:
-             -Sitemap
-             -Social Media Icons
-    
-
-
-B.About
-    --Head:
-
-    --Body: 
-        -Header:
-             -Navigation bar
-             -Home, about, gallery buttons
-    
-        -Main:
-             -Title of the page
-             -Text element with info about me and my motives
-             -
-    
-        -Footer:
-             -Sitemap
-             -Social Media Icons
-    
-C.Gallery
-    --Head:
-    
-    --Body: 
-        -Header:
-             -Navigation bar
-             -Home, about, gallery buttons
-    
-             -Main:
-             -Title of the page
-             -cards With img,link and descriptions of my projects
-             -
-        -Footer:
-             -Sitemap
-             -Social Media Icons
-    
+(X) Create a button with an ID of "menu-button" in the HTML code.
+(X) Create a sliding window with an unordered list inside and an ID of "menu-list" in the HTML code.
+(X) Add list items to the unordered list.
+(X) Add a button with an ID of "close-button" to the sliding window.
+(?) Create a CSS style for the sliding window to position it off-screen to the right of the screen.
+(?) Create a CSS style for the unordered list to stack the list items vertically and fill the height of the sliding window.
+( ) Create a CSS style for the sliding window to slide it into view when the "open" class is added.
+( ) Add JavaScript code to listen for clicks on the "menu-button" and "close-button" elements.
+( ) Add JavaScript code to add or remove the "open" class from the "menu-list" element when the "menu-button" or "close-button" is clicked.
+( ) Test the sliding menu on various screen sizes and devices.

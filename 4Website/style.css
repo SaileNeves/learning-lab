@@ -1,0 +1,50 @@
+body{
+background-color:rgb(2, 31, 66);
+display: flex;
+justify-content: center;
+align-items:center; 
+flex-flow: row wrap; 
+flex-direction: column;
+width: 85%;
+}
+
+h1 h2 h3{
+    color: rgba(177, 166, 166, 0.986);
+}
+
+p{
+    color:darkgrey;
+}
+
+a{
+    color: darkgray;
+}
+a:hover{
+    color: mediumaquamarine;
+}
+
+#title{
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    flex: 1;
+    border-radius: 4px;
+    padding: 1em;
+    margin: 1.5em;
+    min-width: 300px;
+}
+
+.card-text{
+display:none
+}
+
+.card-skillList{
+display:none
+}

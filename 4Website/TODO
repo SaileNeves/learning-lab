@@ -1,0 +1,91 @@
+1. Identify the problem:
+- Context
+    - Describe the issue
+     - Why do we need it ?
+2. Research and refine[look up for solutions and break down the issue even further]
+     - Focus on logic, not code.
+3. Write fake code[pseudocode].
+     - Once again, logic, not syntax
+4. Test it! Console.log, console.dir
+     - Test line by line.Don't move on until you have made this line work.
+
+
+
+1.Need to make a personal website, it should have:
+- A personal introduction
+    - My motives to become a dev
+        - A way to showcase what i've learned
+
+2.Plan the site
+    - Homepage
+    - it should have a brief introduction and a navigation bar to go to other pages in the website
+        - About
+        - A page with my personal info and my motives to become a dev
+            - Gallery
+            - A page with a portfolio of my projects
+
+3.Build the code workings of the pages
+
+A.Homepage
+    
+    --Head: /* it should countain the page title, metadata, link to StyleSheet, links to custom favIcon */
+    --Body: 
+        -Header:
+             -Navigation bar
+                -Home, about, gallery,contact buttons
+        -Main:
+             -(l)(H1)(/l)Title of the page
+                -(p)Introduction Text
+                -Featured projects
+
+            -(H2)About
+                -(p)Text element with info about me and my motives
+
+            -(H3)Projects
+                -featured projects cards With img,link and descriptions and skills used in the projects
+                -button to go to a list of more projects
+
+            -(H4)Contact
+                -(p)Contact info 
+    
+        -Footer:
+                -Social Media Icons
+
+B.Project Archive
+--Head:
+    --Body: 
+        -Header:
+             -Navigation bar
+                -Home, about, gallery,contact buttons
+        -Main:
+             -(H1)Project archive
+                -list of projects with details
+        -Footer:
+             -Social Media Icons
+
+    Scripts:
+    -Script to create cards
+         (X)-Plan the layout
+             -(h3)Title
+             -IMG thumbnail
+             -(p)Text description
+             -add link to title and img
+             -(p)list skills used
+
+         (x)-create function to create the card
+             -create div for the card
+             -create the elements
+             -add to page
+
+
+
+    -Show more button
+      -Function
+    
+       (x)create button
+       (x)add event listener to buttons created
+       (x)define wich items the event affects
+       ( )set their default display property
+       ( )add a function with conditions to change de display property
+       (x)set this function to the event listener
+
