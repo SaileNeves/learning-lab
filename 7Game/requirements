@@ -1,0 +1,66 @@
+    (X) A user interface that displays the game board with 4 buttons, a score counter, and a "start" button to begin the game.
+
+    (x) A way to generate a random sequence of lights and notes that the player must repeat by pressing the correct buttons.
+    (x) A way to play the sequence of lights and notes for the player to hear and see.
+
+    (X) A way to capture the player's button presses and check if they match the generated sequence.
+    (x ) A way to increase the score and sequence length each time the player gets the sequence right.
+
+    (x) A way to end the game and display the final score.
+    (x) A way to reset the game and start over with a new random sequence.
+
+    ( ) Proper error handling and feedback for the player in case of invalid input or errors.
+    ( ) Responsive design that adapts to different screen sizes and devices.
+    ( ) The game should be compatible with different web browsers and operating systems.
+
+    Components:
+    
+( )Game Board: The game board is the primary user interface component, containing four colored buttons that light up and play a sound when pressed. The game board should also display the player's score, and any game messages (e.g., "You win!" or "Game over").
+       -Scoreboard
+       -4 Buttons
+       -Start Button
+       -Display for messages
+       
+       -Button lighting effects (to indicate correct and incorrect button presses)
+
+( )Button Controller: The button controller is responsible for handling user input from the four colored buttons on the game board. It should detect when a button is pressed, play the corresponding sound, and pass the user input to the game logic controller.
+       -Event listeners for each of the four colored buttons.
+       -Logic to detect when a button is pressed.
+       -Code to play the corresponding sound when a button is pressed.
+       -Code to play the button input sequence.
+       -Functionality to disable buttons during the game over screen.
+  
+Game Logic Controller: The game logic controller is responsible for managing the game state, including generating random sequences of button presses, checking user input against the sequence, and updating the score and sequence length as the game progresses. It should also communicate with the button controller and the game board to update the user interface and play sounds.
+       -Call to Sequence Generator.
+       -Logic to check user input against the generated sequence.
+       -Call Score Tracker when sequence is right.
+       -Code to update the game board display.
+       -Game Over Call
+
+Game Over Screen:
+       -Logic to determine when the game is over.
+       -Code to handle the game over screen with button to allow the player to restart the game.
+       
+
+Audio Player: The audio player is responsible for playing the sounds associated with each button press. It should load the audio files, create and manage audio nodes, and play the sounds when triggered by the button controller or the game logic controller.
+       -Audio file loading code
+       -Audio node creation code
+       -Code to play audio nodes when triggered by the button controller or game logic controller
+
+Light Toggler: Turn button light on/off
+      - event listener to toggle the light on
+      - get the timer
+      -Turn the light off
+
+Game Score Tracker: The score tracker is responsible for keeping track of the player's score as they progress through the game. It should update the score on the game board as the player completes each sequence correctly.
+       -Code to initialize the player's score.
+       -
+       -Code to update the player's score as they progress through the game(increase score).
+
+Sequence Generator: The sequence generator is responsible for generating random sequences of button presses for the player to follow. It should generate longer sequences as the player progresses through the game.
+       -Code to generate a random sequence for the buttons.
+       -Logic to increase the length of the sequence as the player progresses.
+
+Message Display: The message display is responsible for displaying messages to the player, such as "You win!" or "Game over". It should communicate with the game logic controller to display the appropriate message at the appropriate time.
+       -Code to display various messages to the player, including "You win!", "Game over", and "Next sequence".
+       -Logic to clear messages when appropriate.

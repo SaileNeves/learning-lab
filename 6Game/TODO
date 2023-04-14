@@ -15,11 +15,11 @@
     Break it down into smaller tasks:
 
     (x)Create the game board using HTML and CSS.
-    Create a snake object with initial position and direction.
+    (X)Create a snake object with initial position and direction.
     Add controls to move the snake in the chosen direction.
     Add logic to make the snake grow when it eats food.
     Add logic to end the game if the snake hits the wall or its own body.
-    Add food to the board at random intervals.
+    (x)Add food to the board at random intervals.
     Display the score at the top of the screen.
 
     Define the data structures:

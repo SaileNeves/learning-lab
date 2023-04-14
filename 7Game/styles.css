@@ -1,0 +1,47 @@
+#board{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: red;
+}
+#board p{
+    margin:10px
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+#start-button{
+    display: flex;
+    align-self: center;
+    margin:30px auto 30px auto;
+    width: 50px;
+    height: 50px;
+}
+
+
+.button{
+    width: 50px;
+    height: 50px;
+    margin:10px;
+}
+
+#message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active-1{
+    background-color:greenyellow ;
+}
+.active-2{
+    background-color:red ;
+}
+.active-3{
+    background-color:blue ;
+}
+.active-4{
+    background-color:yellow ;
+}

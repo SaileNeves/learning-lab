@@ -1,0 +1,54 @@
+Game board
+
+HTML
+
+-Divisoria(Gameboard)
+
+  -(Paragrafo): "Score: XX"
+  -(Botão)x4 id = "button+number" class = "button":
+  -(Botão) id = "start-button":
+     -subdivisoria(message) <!-- should be displayed only when game ends -->
+  -(paragrafo) id = ":gameOver-message"
+
+
+JAVASCRIPT
+
+
+Button Light
+-Light the button up
+  -Select button
+     -Loop through the sequence
+     -Get the first number
+     -Turn on the button corresponding to the first number
+       -
+     -add a timer to turn it off
+     -turn it off after the timer
+     -get the next number
+     -repeat the process until number sequence ends
+     -finish the process
+
+Player Score
+     -Define default score
+     -Start Score when game starts
+     -Receive game results when game ends
+     -Add 1 point if you win.
+
+Check Player sequence
+     -Create an array to save player input
+     -Detect input
+     -After each input compare with the corresponding number in the sequence array
+     -if the input is correct add it to the player input array
+     -If the input is wrong finish the game and call a game over message
+
+Game Logic Controller()
+-Hide Start Button.
+-Start the score.
+-Play the sequence.
+-Detect input.
+  -Deactivate the buttons and show game over screen if the input is incorrect.
+  -If the sequence of input is correct ,add a number to the score and run the next sequence.
+
+
+
+
+
