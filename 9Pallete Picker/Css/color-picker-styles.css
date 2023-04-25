@@ -1,0 +1,15 @@
+.color-picker{
+    height:30px ;
+    width: 30px;
+    background-color: red;
+
+    display:none;
+}
+
+.active{
+    display:flex;
+}
+
+.inactive{
+    display:none;
+}

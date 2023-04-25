@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css\interface.css">
+    <link rel="stylesheet" href="Css\color-display.css">
+    <link rel="stylesheet" href="Css\color-picker-styles.css">
+    <link rel="stylesheet" href="Css\buttonsStyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>Color Picker</h1>
+        <button id="pltButton">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <main>
+
+        <div class="colors-container">
+            <!-- <div class="hidden">
+                <div class="hoverButtons">
+                    <ul class="button-list">
+                        <button class="button">TEST</button>
+                    </ul>
+
+                </div>
+                <div class="color-picker"></div>
+            </div>
+ -->
+            <div id=color1 class="color-display">
+                <label class="colorCode">Code Here</label>
+            </div>
+            <div id=color2 class="color-display">
+                <label class="colorCode">Code Here</label>
+            </div>
+            <div id=color3 class="color-display">
+                <label class="colorCode">Code Here</label>
+            </div>
+            <div id=color4 class="color-display">
+                <label class="colorCode">Code Here</label>
+            </div>
+            <div id=color5 class="color-display">
+                <label class="colorCode">Code Here</label>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <div id="genModeButtons">
+                <button class="genButton">Random</button>
+                <button class="genButton">Monochrome</button>
+            </div>
+            <div id="saveButtons">
+                <button class="menuButton">Download Pallete</button>
+                <button class="menuButton">Add to Favourites</button>
+            </div>
+        </nav>
+
+    </main>
+
+    <script src="scripts\color-generator.js"></script>
+    <script src="scripts\color-picker.js"></script>
+    <script src="scripts\interface.js"></script>
+</body>

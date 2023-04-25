@@ -1,0 +1,46 @@
+auto generate multiple collors
+create a gradient pallete instead of complete random
+option to change each colour
+save palette to local Storage
+
+<!-- User Interface -->
+1. Color display
+    - divs to display the generated colors.
+        - Hover effect to display buttons 
+        - Text Element to display the current color code and change color when clicked.
+        - 
+    - Button to add or remove div's.
+
+2. Button to favorite palletes.
+    - 
+    
+3. Button to Save the pallete to local storage.
+    - take pallete divs info.
+    - take info on the colors in the div.
+    - save the info in an archive.
+
+<!-- Color generation algorithm: function to generate color gradient when activated. -->
+ 1. getRandomHue 
+     - Generates a random base color in hex format.
+
+ 2. getComplementaryHue
+     - Calculate the oposite color of the base color (complementary hue).
+
+ 3.  getGradient
+     - Take the number of color display div's in the page and assign to a variable.
+     - Calculate the gradient of colors between the base color and the oposite color, with the number of divs being the number of colors in the gradient.
+     - Convert colors to rgb.
+     - Assign each color to each div in order.
+
+<!-- Color picker -->
+    - Hover effect to show buttons.
+        -Button to copy color code.
+         -
+ 2. 
+    -Color selection screen for choosing color and saving it.
+         - Color selector.
+        - Color sliders (Hue,Saturation,Lightness).
+     
+ -Function to define the opening location for the Color selection screen.
+ -Function to change the div color for the chosen color.
+   -subfunction to change the color code in the interface to the code of the chosen color.

@@ -1,0 +1,53 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    height: 100%;
+
+    background-color: rgb(255, 255, 255);
+    user-select: none;
+}
+
+
+ /*Top navigation*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    margin:auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: #4f4f4f;
+    margin: auto;
+
+  }
+
+/*Bottom navigation*/
+
+  .bottom-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1rem;
+  }
+
+  #genModeButtons{
+
+  }
+
+  #saveButtons{
+
+  }
