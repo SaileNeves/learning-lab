@@ -35,3 +35,25 @@ let indexOfBecause = challenge.indexOf("because");
 console.log(indexOfBecause);
 let lastIndexOfBecause = challenge.lastIndexOf("because");
 console.log(lastIndexOfBecause);
+let because = /because/
+let firstBecause = challenge.search(because);
+console.log(firstBecause);
+challenge = '      30 Days Of JavaScript       ';
+let trimmedInput = challenge.trim();
+console.log(trimmedInput);
+challenge = '30 Days Of JavaScript';
+let startResult = challenge.startsWith('30');
+console.log(startResult);
+let endResult = challenge.endsWith('JavaScript');
+console.log(endResult);
+let regexA = /a/g;
+let matchResult = challenge.match(regexA);
+console.log(matchResult);
+let chal = '30 days of ';
+let lenge = 'JavaScript';
+challenge = chal.concat(lenge);
+console.log(challenge);
+
+
+
+

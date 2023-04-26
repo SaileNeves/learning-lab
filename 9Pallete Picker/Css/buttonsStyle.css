@@ -25,6 +25,7 @@
 
 
 /*Bottom nav buttons*/
+
 .genButton{
     background-color: transparent;
     border-radius: 0.5rem;
@@ -33,14 +34,39 @@
     font-weight: 900;
     letter-spacing: 0.1rem;
 
-    padding: 1rem 2rem;
-    margin: auto;
+    padding: 10px 10px;
+    margin: 10px;
 
     transition: all 0.1s linear;
     
 }
 
+.genButton:last-child{
+    margin-left: 0px;
+}
 
+.saveButton{
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 1px solid #b1b0b5;
+
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+
+    padding: 5px 5px;
+    margin: 10px;
+
+    transition: all 0.1s linear;
+    
+}
+
+.saveButton:last-child{
+    margin-left: 0px;
+}
+.Icon{
+    width: 24px;
+    height: 24px;
+}
 
 /*Hover Menu Buttons*/
 

@@ -14,3 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
         buttonList.style.display = 'none';
     });
 }); */
+
+/*Top Nav*/
+
+palleteBtn = document.getElementById("pltButton");
+palleteBtn.addEventListener('click', ()=> toggleFavList());
+
+
+function toggleFavList(){
+    const myDiv = document.getElementById('myDiv');
+
+    if (myDiv.style.display === 'none') {
+      myDiv.style.display = 'flex';
+    } else {
+      myDiv.style.display = 'none';
+    }
+  }
