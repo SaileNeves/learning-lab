@@ -15,14 +15,35 @@ for (let i = 0; i < numDivs; i++) {
   } else if (i === numDivs - 1) {
     lightness = 80; // Adjust the lightness value for the last color in the gradient
   }
-  const color = `hsl(${baseColor.slice(4, 7)}, 100%, ${lightness}%)`; 
+  /* const color = `hsl(${baseColor.slice(4, 7)}, 100%, ${lightness}%)`;  */
+
+  const color = {hsl:'string' , fontcolor:'dark'};
+  
+  /* const colorOBJ = {hsl:`${baseColor.slice(4, 7)}, 100%`} , {lightordark:`${lightness}%`} */
+
   colorGradient.push(color);
+  console.log(colorGradient);
 }
+
+//Assign the code of the colors to the label in the divs
+
+/* colorGradient.forEach((item,index)=>{
+console.log(item,index);
+}); */
+
+/* document.querySelectorAll('.colorCode').forEach((item, i) => {
+  item.textContent = colorGradient[i];
+  let lightordark = 
+}); */
 
 // Assign each color to each div in order.
 document.querySelectorAll('.color-display').forEach((div, i) => {
   div.style.backgroundColor = colorGradient[i];
 });
+}
+
+function LightorDark(){
+
 }
 
 function RandomColorGen(){
@@ -42,6 +63,32 @@ document.querySelectorAll('.color-display').forEach((div, i) => {
   div.style.backgroundColor = colorGradient[i];
 });
 }
+
+//Buttons
+let randomButton = document.getElementById("randomG");
+randomButton.addEventListener('click' , ()=> RandomColorGen());
+
+let monochromeButton = document.getElementById("monoC");
+monochromeButton.addEventListener('click' , ()=> monochromeGen());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //refactoring

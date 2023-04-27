@@ -53,7 +53,16 @@ let chal = '30 days of ';
 let lenge = 'JavaScript';
 challenge = chal.concat(lenge);
 console.log(challenge);
+let repeat = challenge.repeat(2);
+console.log(repeat);
 
+//part 2
 
-
+console.log(`The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.`);
+console.log(`"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."`);
+let a = '10';
+let b = 10;
+b = b.toString();
+let equal = typeof a == typeof b;
+console.log(equal);
 

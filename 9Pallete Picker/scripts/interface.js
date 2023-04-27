@@ -22,11 +22,10 @@ palleteBtn.addEventListener('click', ()=> toggleFavList());
 
 
 function toggleFavList(){
-    const myDiv = document.getElementById('myDiv');
-
-    if (myDiv.style.display === 'none') {
-      myDiv.style.display = 'flex';
+    const favList = document.querySelector('.favList');
+    if (favList.style.display === 'none') {
+      favList.style.display = 'flex';
     } else {
-      myDiv.style.display = 'none';
+      favList.style.display = 'none';
     }
   }

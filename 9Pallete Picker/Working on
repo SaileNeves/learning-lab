@@ -1,2 +1,24 @@
-- take the click axis
--
+// Generate a random base color in HSL format.
+// Get the number of color display divs in the page.
+// Calculate the gradient of colors between the base color and the opposite color.
+<--Get the color code of the colors generated-->
+  -select the elements from the colorGradient[] array
+<--assign it to the label elements in each div-->
+   -select the label elements
+   -assign the corresponding index in the array to the corresponding number of the label
+   -add the code in
+// Assign each color to each div in order.
+
+
+Create an object containing hsl and isDark
+{hsl: string, fontColor: 'black' or 'white'}
+
+Push object to array
+
+Access the object properties through forEach(item => item.hsl)
+
+
+
+
+
+

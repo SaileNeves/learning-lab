@@ -37,11 +37,15 @@ header {
 
   }
   
-.favlist{
-  background-color: white;
+.favList{
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: -70%;
+
+  background-color: rgb(255, 255, 255);
   height: 100vh;
-  width: 70%;
-  display:none;
+  width: 70vh;
 }
 
 /*Bottom navigation*/
