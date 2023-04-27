@@ -17,7 +17,7 @@
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-            <div class = "favList" style="display: none;">
+            <div class="favList" style="display: none;">
 
             </div>
         </button>
@@ -36,14 +36,27 @@
                 <div class="color-picker"></div>
             </div>
  -->
+
+            <div id="color-picker" style="display:none" >
+                <div id="color-result">Result</div>
+                <p class = "sliderTitle">Hue:</p>
+                <div class="color-slider" id="hue-slider"></div>
+                <p class = "sliderTitle">Saturation:</p>
+                <div class="color-slider" id="saturation-slider"></div>
+                <p class = "sliderTitle">Lightness:</p>
+                <div class="color-slider" id="lightness-slider"></div>
+                <button id="save-button">Save</button>
+            </div>
+
+
             <div id=color1 class="color-display">
-                <label id="code1"class="colorCode">Code Here</label>
+                <label id="code1" class="colorCode">Code Here</label>
             </div>
             <div id=color2 class="color-display">
-                <label id="code2"class="colorCode">Code Here</label>
+                <label id="code2" class="colorCode">Code Here</label>
             </div>
             <div id=color3 class="color-display">
-                <label id="code3"class="colorCode">Code Here</label>
+                <label id="code3" class="colorCode">Code Here</label>
             </div>
             <div id=color4 class="color-display">
                 <label id="code4" class="colorCode">Code Here</label>
@@ -55,15 +68,15 @@
 
         <nav class="bottom-nav">
             <div id="genModeButtons">
-                <button id = "randomG" class="genButton">Random</button>
-                <button id = "monoC" class="genButton">Monochrome</button>
+                <button id="randomG" class="genButton">Random</button>
+                <button id="monoC" class="genButton">Monochrome</button>
             </div>
             <div id="saveButtons">
-                <button class="saveButton">
-                    <img class = "Icon" src = "Icons\css-3.png">
+                <button id="saveBtn" class="saveButton">
+                    <img class="Icon" src="Icons\css-3.png">
                 </button>
-                <button class="saveButton">
-                    <img class = "Icon" src = "Icons\favorite.png">
+                <button id="favBtn" class="saveButton">
+                    <img class="Icon" src="Icons\favorite.png">
                 </button>
             </div>
         </nav>

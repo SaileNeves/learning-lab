@@ -1,10 +1,8 @@
 RandomColorGen()
-
+//Monochrome Gen Mode
 function monochromeGen(){
-// Generate a random base color in HSL format.
-const baseColor = `hsl(${Math.floor(Math.random() * 360)}, 100%, 50%)`;
-// Get the number of color display divs in the page.
-const numDivs = document.querySelectorAll('.color-display').length;
+const baseColor = `hsl(${Math.floor(Math.random() * 360)}, 100%, 50%)`; // Generate a random base color in HSL format.
+const numDivs = document.querySelectorAll('.color-display').length; // Get the number of color display divs in the page.
 
 // Calculate the gradient of colors between the base color and the opposite color.
 const colorGradient = [];
@@ -15,37 +13,33 @@ for (let i = 0; i < numDivs; i++) {
   } else if (i === numDivs - 1) {
     lightness = 80; // Adjust the lightness value for the last color in the gradient
   }
-  /* const color = `hsl(${baseColor.slice(4, 7)}, 100%, ${lightness}%)`;  */
 
-  const color = {hsl:'string' , fontcolor:'dark'};
-  
-  /* const colorOBJ = {hsl:`${baseColor.slice(4, 7)}, 100%`} , {lightordark:`${lightness}%`} */
-
+  const color = {color:`hsl(${baseColor.slice(4, 7)}, 100%, ${lightness}%)` , fontcolor:LightorDark(lightness)};
   colorGradient.push(color);
+
   console.log(colorGradient);
 }
 
 //Assign the code of the colors to the label in the divs
-
-/* colorGradient.forEach((item,index)=>{
-console.log(item,index);
-}); */
-
-/* document.querySelectorAll('.colorCode').forEach((item, i) => {
-  item.textContent = colorGradient[i];
-  let lightordark = 
-}); */
+document.querySelectorAll('.colorCode').forEach((code,i)=>{
+code.textContent = colorGradient[i].color;
+});
 
 // Assign each color to each div in order.
 document.querySelectorAll('.color-display').forEach((div, i) => {
-  div.style.backgroundColor = colorGradient[i];
+  div.style.backgroundColor = colorGradient[i].color;
 });
 }
 
-function LightorDark(){
-
+function LightorDark(lightness) {
+  if (lightness > 50) {
+    return 'Dark';
+  } else {
+    return 'Light';
+  }
 }
 
+//Random gen Mode
 function RandomColorGen(){
 const baseColor = Math.floor(Math.random() * 360);
 const oppositeColor = (baseColor + 180) % 360; //Calculate the oposite color to the base color
@@ -58,7 +52,12 @@ for (let i = 0; i < numDivs; i++) {
   const color = `hsl(${hue}, 100%, 50%)`;
   colorGradient.push(color);
 }
+//Assign the code of the colors to the label in the divs
+document.querySelectorAll('.colorCode').forEach((code,i)=>{
+  code.textContent = colorGradient[i];
+  });
 
+// Assign each color to each div in order.
 document.querySelectorAll('.color-display').forEach((div, i) => {
   div.style.backgroundColor = colorGradient[i];
 });
@@ -70,24 +69,6 @@ randomButton.addEventListener('click' , ()=> RandomColorGen());
 
 let monochromeButton = document.getElementById("monoC");
 monochromeButton.addEventListener('click' , ()=> monochromeGen());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,3 +1,32 @@
+//Top Nav
+let palleteBtn = document.getElementById("pltButton");
+palleteBtn.addEventListener('click', ()=> toggleFavList());
+
+function toggleFavList(){
+    const favList = document.querySelector('.favList');
+    if (favList.style.display === 'none') {
+      favList.style.display = 'flex';
+    } else {
+      favList.style.display = 'none';
+    }
+  }
+
+  
+//Bottom Buttons
+let saveButton = document.getElementById("saveBtn");
+saveButton.addEventListener('click',()=> saveToDesktop());
+
+let favButton = document.getElementById("favBtn");
+favButton.addEventListener('click',()=> addToFavourites());
+
+function saveToDesktop(){
+
+}
+
+function addToFavourites(){
+
+}
+
 /* hoverButtonList = document.querySelector(".hoverbuttons")
 hoverButtonList.addEventListener('click', )
 
@@ -14,18 +43,3 @@ document.addEventListener('DOMContentLoaded', function() {
         buttonList.style.display = 'none';
     });
 }); */
-
-/*Top Nav*/
-
-palleteBtn = document.getElementById("pltButton");
-palleteBtn.addEventListener('click', ()=> toggleFavList());
-
-
-function toggleFavList(){
-    const favList = document.querySelector('.favList');
-    if (favList.style.display === 'none') {
-      favList.style.display = 'flex';
-    } else {
-      favList.style.display = 'none';
-    }
-  }

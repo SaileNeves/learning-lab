@@ -1,21 +1,22 @@
-// Generate a random base color in HSL format.
-// Get the number of color display divs in the page.
-// Calculate the gradient of colors between the base color and the opposite color.
-<--Get the color code of the colors generated-->
-  -select the elements from the colorGradient[] array
-<--assign it to the label elements in each div-->
-   -select the label elements
-   -assign the corresponding index in the array to the corresponding number of the label
-   -add the code in
-// Assign each color to each div in order.
+//COLOR PICKER WINDOW
+  html
+    1.Div for the color picker window
+      -Div color result.
+      - 3 divs for hue,saturation,and lightness.
+      - Save Button.
+
+  JavaScript
+    1. Variables selecting the html elements.
+    2. Event listener for the button to open the color window.
+    3. Event listener for the slider divs to listen for the input,and update color the display of the bar acording to the input.
+    4. Event listener for the save button to get the sliders result code and modify the display with it.
+
+    5.Function to generate colors shown in the sliders.
+    6.Function to merge the sliders input in the result window.
+    7.function for the save button to get the code for the color in the result window and change the div for for the color in the result window.
+    
 
 
-Create an object containing hsl and isDark
-{hsl: string, fontColor: 'black' or 'white'}
-
-Push object to array
-
-Access the object properties through forEach(item => item.hsl)
 
 
 
