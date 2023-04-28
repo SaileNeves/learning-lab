@@ -23,6 +23,7 @@ for (let i = 0; i < numDivs; i++) {
 //Assign the code of the colors to the label in the divs
 document.querySelectorAll('.colorCode').forEach((code,i)=>{
 code.textContent = colorGradient[i].color;
+code.style.color = colorGradient[i].fontcolor;
 });
 
 // Assign each color to each div in order.
@@ -32,10 +33,10 @@ document.querySelectorAll('.color-display').forEach((div, i) => {
 }
 
 function LightorDark(lightness) {
-  if (lightness > 50) {
-    return 'Dark';
+  if (lightness > 30) {
+    return 'black';
   } else {
-    return 'Light';
+    return 'white';
   }
 }
 

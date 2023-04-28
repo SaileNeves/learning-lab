@@ -66,3 +66,22 @@ b = b.toString();
 let equal = typeof a == typeof b;
 console.log(equal);
 
+
+let SN = 10;
+let PF = parseFloat("9.8");
+let pfEqual = SN == PF;
+PF = parseFloat("10");
+
+
+let string1 = 'python';
+let string2 = 'jargon';
+let on = /on/;
+let search1 = string1.match(on);
+let search2 = string2.match(on);
+console.log(search1,search2);
+
+let sentence = 'I hope this course is not full of jargon.';
+let jargon = /jargon/;
+searchSentence = sentence.match(jargon);
+console.log(searchSentence);
+
